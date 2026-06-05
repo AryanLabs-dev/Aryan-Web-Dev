@@ -1,0 +1,17 @@
+.first {
+    background-color: red;
+    color: white;
+}
+
+#first {
+    background-color: blue;
+    color: white;
+}
+#Yellow{
+    background-color: rgb(72, 255, 0);
+    color: white;
+}
+.pink{
+    background-color: rgb(255, 87, 177);
+    color: white;
+}
