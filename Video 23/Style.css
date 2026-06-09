@@ -1,0 +1,12 @@
+div {
+    border: 2px dashed #7700ff;
+    outline: 3px dashed rgb(2, 217, 255);
+    outline-offset: 4px;
+    text-align: center;
+    box-shadow: -7px 18px 33px blue;
+    border-radius: 20px;
+}
+
+.text {
+    text-shadow: -7px 18px 33px rgb(47, 47, 206);
+}
