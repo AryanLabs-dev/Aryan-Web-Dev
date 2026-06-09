@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* .boxes {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+} */
+
+.box {
+    border: 4px solid black;
+    width: 50vw;
+    height: 40vh;
+    margin: 20px;
+    padding: 20px;
+}
+
+.box1 {
+    background-color: aqua;
+    position: sticky;
+    z-index: -1;
+    top: 0;
+}
+
+.box2 {
+    background-color: black;
+    position: relative;
+    bottom: 20px;
+    z-index: 1;
+}
+
+.box3 {
+    background-color: blueviolet;
+}
+
+.box4 {
+    background-color: chocolate;
+}
