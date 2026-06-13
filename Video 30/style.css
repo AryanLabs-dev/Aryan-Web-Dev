@@ -1,0 +1,79 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Nav Color root*/
+:root {
+    --colorA: rgb(143, 143, 246);
+    --colorB: rgb(24, 255, 24);
+    --colorC: aqua;
+    --colorD: rgb(119, 8, 255);
+}
+
+/* Nav hover Color root*/
+:root {
+    --ch1: rgb(143, 143, 156);
+    --ch2: rgb(255, 173, 173);
+    --ch3: rgb(227, 175, 255);
+    --ch4: rgb(66, 215, 163);
+}
+
+body {
+    background-color: rgb(7, 5, 5);
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    box-shadow: 15px 5px 15px;
+    background-color: rgb(173, 255, 129);
+    border-radius: 20px;
+}
+
+li {
+    box-shadow: 15px 5px 15px wheat;
+    outline: 2px solid rgb(255, 255, 255);
+    border: 1px solid black;
+    padding: 30px;
+    border-radius: 20px 0;
+    margin: 20px;
+    cursor: pointer;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+li:nth-child(1) {
+    background-color: var(--colorA);
+}
+
+li:nth-child(2) {
+    background-color: var(--colorB);
+}
+
+li:nth-child(3) {
+    background-color: var(--colorC);
+}
+
+li:nth-child(4) {
+    background-color: var(--colorD);
+}
+
+li:nth-child(1):hover {
+    background-color: var(--ch1);
+}
+
+li:nth-child(2):hover {
+    background-color: var(--ch2);
+}
+
+li:nth-child(3):hover {
+    background-color: var(--ch3);
+}
+
+li:nth-child(4):hover {
+    background-color: var(--ch4);
+}
