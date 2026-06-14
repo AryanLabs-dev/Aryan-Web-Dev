@@ -21,18 +21,22 @@
 
 body {
     background-color: rgb(7, 5, 5);
+    
 }
 
-ul {
+.navbar {
     display: flex;
     list-style: none;
     justify-content: space-around;
-    box-shadow: 15px 5px 15px;
-    background-color: rgb(173, 255, 129);
+    background: linear-gradient(blue, rgb(0, 255, 157));
+    position: sticky;
+    top: 0;
+    z-index: 10;
     border-radius: 20px;
+    overflow: hidden;
 }
-
-li {
+.navbar li {
+    z-index: 10;
     box-shadow: 15px 5px 15px wheat;
     outline: 2px solid rgb(255, 255, 255);
     border: 1px solid black;
@@ -46,34 +50,216 @@ li {
     font-weight: bolder;
 }
 
-li:nth-child(1) {
+.navbar li:nth-child(1) {
     background-color: var(--colorA);
 }
 
-li:nth-child(2) {
+.navbar li:nth-child(2) {
     background-color: var(--colorB);
 }
 
-li:nth-child(3) {
+.navbar li:nth-child(3) {
     background-color: var(--colorC);
 }
 
-li:nth-child(4) {
+.navbar li:nth-child(4) {
     background-color: var(--colorD);
 }
 
-li:nth-child(1):hover {
+.navbar li:nth-child(1):hover {
     background-color: var(--ch1);
 }
 
-li:nth-child(2):hover {
+.navbar li:nth-child(2):hover {
     background-color: var(--ch2);
 }
 
-li:nth-child(3):hover {
+.navbar li:nth-child(3):hover {
     background-color: var(--ch3);
 }
 
-li:nth-child(4):hover {
+.navbar li:nth-child(4):hover {
     background-color: var(--ch4);
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+    padding: 20px;
+    justify-items: center;
+}
+
+
+.card:hover {
+    transform: translateY(-15px);
+    transform: translateY(-15px);
+
+}
+
+.card {
+    cursor: pointer;
+    width: 100%;
+    max-width: 300px;
+    outline: 1px solid black;
+    border-radius: 20px;
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.tags {
+    margin-top: 10px;
+}
+
+.tags span {
+    border: 1px solid gray;
+    border-radius: 20px;
+    padding: 4px 12px;
+    margin-right: 8px;
+    color: gray;
+}
+
+h2 {
+    margin: 10px;
+    right: 10px;
+    position: relative;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: gray;
+}
+
+button {
+    color: rgb(74, 165, 255);
+    background-color: rgb(212, 225, 247);
+    border-radius: 40px;
+    padding: 15px 25px;
+    border: none;
+}
+button:hover{
+    transform: translateY(-5px);
+    background-color: rgb(0, 255, 47);
+    cursor: pointer;
+}
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer {
+    background: #000;
+    color: #fff;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    padding: 60px 8%;
+}
+
+.footer-section h3 {
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+}
+
+.footer-section p {
+    line-height: 1.8;
+    color: #ccc;
+}
+
+.footer-section ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    list-style: none;
+}
+
+.footer-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-section a:hover {
+    color: #00d9ff;
+    padding-left: 8px;
+}
+
+.copyright {
+    background: #111;
+    color: #aaa;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #333;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+    .footer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .footer {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer-section ul {
+        align-items: center;
+    }
+
+    .footer-section a:hover {
+        padding-left: 0;
+    }
+}
+
+@media only screen and (max-width:455px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar li {
+        width: 80%;
+        text-align: center;
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        max-width: 90%;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
 }
