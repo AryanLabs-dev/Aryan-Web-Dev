@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 5 by Aryan Labs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+        color: white;
+    }
+
+    nav {
+        position: sticky;
+        top: 1;
+        z-index: 999;
+        background-color: rgb(239, 169, 255);
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-around;
+        background-color: rgb(239, 169, 255);
+        padding: 20px;
+    }
+
+    ul li {
+        list-style: none;
+        font-weight: bolder;
+        font-size: 20px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+        text-decoration-color: blue;
+        text-decoration-thickness: 3px;
+    }
+
+    .boxes {
+        background-color: green;
+        padding: 40px;
+        margin: 0px;
+    }
+
+    body {
+        background-color: black;
+    }
+
+    .main {
+        display: flex;
+    }
+
+    .box {
+        padding: 15vw;
+        border: 2px solid rgb(255, 255, 255);
+        margin: 20px auto;
+
+    }
+
+    .box:first-child {
+        background-color: rgb(249, 161, 161);
+    }
+
+    .box:nth-child(2) {
+        background-color: rgb(4, 138, 255);
+    }
+
+    .txt {
+        border: 2px solid white;
+        text-align: center;
+        text-size-adjust: 3em;
+        border-radius: 40px;
+        padding: 60px;
+        width: 60%;
+        margin: 10px auto;
+        font-weight: bolder;
+    }
+
+    .image {
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+    }
+
+    img {
+        height: 80px;
+        width: 80px;
+        border-radius: 40px;
+        box-shadow: 0 0 20px;
+        position: fixed;
+    }
+
+    footer>h2 {
+        background-color: white;
+        color: black;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        text-shadow: 7px 4px 10px;
+        height: 50px;
+    }
+</style>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Services</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="boxes">
+            <div class="main">
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+        </div>
+        <div class="image">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn3gv2YE4e9rr59PDRaH2rUQ7JlNb3qosw2a0O5aj2f9H4dEq3"
+                alt="logo.png">
+        </div>
+        <div class="txt">
+            <h1>Welcome to this Sigma Web Development Express</h1>
+        </div>
+    </main>
+    <footer>
+        <h2>Aryan Singh &copy; All Right Reserveds</h2>
+    </footer>
+</body>
+
+</html>
