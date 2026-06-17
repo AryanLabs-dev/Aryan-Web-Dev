@@ -1,0 +1,30 @@
+.box:first-child {
+    background-color: blue;
+    color: white;
+}
+
+.box:nth-last-child(1) {
+    background-color: blueviolet;
+    color: white;
+}
+
+.boxes * {
+    background-color: rgb(86, 255, 86);
+    color: white;
+    padding: 20px;
+    margin: 30px;
+    border-radius: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    border: 2px solid rgb(0, 0, 0);
+}
+.boxes *::first-letter{
+    color: rgb(255, 234, 0);
+    font-size: 2em;
+}
+
+
+
+.box:nth-child(4) {
+    color: rgb(41, 255, 41);
+}
