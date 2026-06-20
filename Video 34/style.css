@@ -1,0 +1,21 @@
+.conatiner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-wrap: wrap;
+    border: 2px solid rebeccapurple;
+    border-radius: 10px;
+}
+/* .items:first-child{
+    flex-shrink: 3;
+    flex-grow: 2;
+} */
+
+.items {
+    width: 20px; 
+    margin: 4px;
+    height: 20px;
+    background-color: rgb(191, 255, 81);
+    border: 2px solid rgb(0, 0, 0);
+}
