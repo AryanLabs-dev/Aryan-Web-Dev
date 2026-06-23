@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid-2 for clean code by Aryan labs</title>
+</head>
+<style>
+    .container {
+        border: 3px solid rgb(83, 83, 238);
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: "nav nav nav"
+            "kuch kuch article"
+            "foot foot foot";
+        /* justify-content: center; */
+        /* justify-items: center; */
+        /* place-items: center; */
+    }
+
+    .items {
+        border: 2px dashed blueviolet;
+        width: 80px;
+        height: 80px;
+    }
+
+
+
+    .items:first-child {
+        /* justify-self: end ; */
+        /* grid-area: nav; */
+        grid-area: nav;
+    }
+
+    .items:nth-child(2) {
+        grid-area: kuch;
+    }
+
+    .items:nth-child(3) {
+        grid-area: article;
+    }
+
+    .i5 {
+        grid-area: foot;
+        /* grid-area: nav; */
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="items">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+        <div class="items i5">4</div>
+    </div>
+</body>
+
+</html>
