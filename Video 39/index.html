@@ -5,8 +5,205 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>let's build the ultra edit website with the Grid by Aryan labs</title>
-    <link rel="stylesheet" href="Style.css">
+    <!-- <link rel="stylesheet" href="Style.css"> -->
 </head>
+<style>
+   * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+nav ul {
+    display: flex;
+    gap: 35px;
+    list-style: none;
+    align-items: center;
+}
+
+
+.li>img {
+    width: 20px;
+}
+
+.logo img {
+    width: 180px;
+}
+
+.logo {
+    margin: 10px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* place-items: center; */
+    justify-content: center;
+}
+
+.cards {
+    width: 300px;
+    min-height: 170px;
+    background: #f8f8f8;
+    margin: 20px;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.btn {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 30px;
+}
+
+.items {
+    display: grid;
+    place-items: center;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+main {
+    max-width: 900px;
+    margin: 50px auto;
+    gap: 30px;
+}
+
+.btn>button {
+    gap: 40px;
+}
+
+button:nth-child(1) {
+    background-color: rgb(47, 197, 217);
+
+
+}
+
+button:nth-child(2) {
+    background-color: rgba(40, 185, 40, 0.841);
+}
+
+button {
+    display: grid;
+    place-items: center;
+    width: 130px;
+    padding: 10px 10px;
+    border-radius: 10px;
+    border: none;
+    margin: auto;
+}
+
+button:nth-child(1):active {
+    background-color: blueviolet;
+}
+
+button:nth-child(2):active {
+    background-color: rgb(43, 255, 188);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+footer{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+}
+
+/* Tablet */
+@media (max-width:900px){
+
+    .container{
+        grid-template-columns:repeat(2,1fr);
+        justify-items:center;
+    }
+
+    .cards{
+        width:300px;
+        margin:0;
+    }
+}
+
+/* Mobile */
+@media (max-width:600px){
+
+    body{
+        overflow-x:hidden;
+    }
+
+    nav{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        gap:15px;
+        padding:15px;
+    }
+
+    .logo img{
+        width:150px;
+    }
+
+    nav ul{
+        display:flex;
+        justify-content:center;
+        gap:12px;
+        flex-wrap:wrap;
+        padding:0;
+    }
+
+    nav li{
+        font-size:14px;
+    }
+
+    main{
+        width:100%;
+        margin:30px auto;
+    }
+
+    .container{
+        display:grid;
+        grid-template-columns:1fr;
+        justify-items:center;
+        gap:20px;
+    }
+
+    .cards{
+        width:90%;
+        max-width:320px;
+        margin:0;
+    }
+
+    footer{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        text-align:center;
+        height:70px;
+    }
+
+    footer h1{
+        font-size:15px;
+    }
+}
+</style>
 
 <body>
     <header>
@@ -197,6 +394,9 @@
         </div>
 
     </main>
+    <footer>
+        <h1>Made with ❤️ by &copy;AryanLabs</h1>
+    </footer>
 </body>
 
 </html>
