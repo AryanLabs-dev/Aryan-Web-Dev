@@ -114,6 +114,11 @@ a {
     color: white;
     font-weight: bold;
 }
+footer{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+}
 
 @media (max-width: 900px) {
     .container {
@@ -158,17 +163,30 @@ a {
     nav li {
         font-size: 14px;
     }
-
+    h1{
+        font-size: small;
+    }
+    footer{
+        width: 100vw;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
 }
 
 @media (max-width:768px) {
 
     nav {
         padding: 10px 20px;
+        flex-direction: column;
     }
 
     .logo img {
         width: 120px;
+        margin-top: -10px;
     }
 
     nav ul {
@@ -182,5 +200,4 @@ a {
     .li img {
         width: 16px;
     }
-
 }
