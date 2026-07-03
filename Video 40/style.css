@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    background-color: aqua;
+    width: 70vw;
+    height: 50vh;
+}
+.items{
+    width: 10vh;
+    height: 10vh;
+    background-color: brown;
+    transition: all 3s ease-in-out 1s;
+    transform: translateX(29%) translateY(29%);
+}
+.translate{
+    transform: translateX(10vw) translateY(10vh);
+    background-color: blue;
+    width: 20vh;
+    height: 20vh;
+}
