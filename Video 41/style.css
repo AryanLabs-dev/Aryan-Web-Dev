@@ -1,29 +1,32 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
-.container{
+
+.container {
     background-color: rgb(9, 106, 106);
     height: 50vh;
     width: 60vw;
 }
-.items{
+
+.items {
     background-color: aqua;
     width: 40px;
     height: 40px;
     display: flex;
-    place-items:  center;
+    place-items: center;
     justify-content: center;
     animation: Aryan-labs 1s cubic-bezier(0.15, -0.25, 0, 1.65) 1s infinite;
 }
 
 @keyframes Aryan-labs {
-    from{
+    from {
         background-color: rgb(255, 200, 127);
         transform: rotate(360deg);
         border-radius: 5px;
     }
-    to{
+
+    to {
         transform: translateX(20vh) translateY(20vh);
         border-radius: 40px;
         color: white;
