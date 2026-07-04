@@ -4,7 +4,7 @@
 }
 .container{
     background-color: aqua;
-    width: 70vw;
+    width: 80vw;
     height: 50vh;
 }
 .items{
@@ -17,6 +17,6 @@
 .translate{
     transform: translateX(10vw) translateY(10vh);
     background-color: blue;
-    width: 20vh;
-    height: 20vh;
+    width: 15vh;
+    height: 15vh;
 }
