@@ -1,0 +1,38 @@
+.container {
+    background-color: blue;
+    width: 90vw;
+    height: 90vh;
+    position: relative;
+}
+
+.box {
+    width: 121px;
+    height: 121px;
+    background-color: rgb(254, 80, 80);
+    border-radius: 70px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    animation: AryanX 4s linear infinite,
+        bounceY 1s ease-out infinite alternate
+}
+
+@keyframes AryanX {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: 80%;
+    }
+}
+
+@keyframes bounceY {
+    from {
+        bottom: 0;
+    }
+
+    to {
+        bottom: 70%;
+    }
+}
