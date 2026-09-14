@@ -1,0 +1,13 @@
+body{
+    display: flex;
+}
+.img1{
+    /* filter:  brightness(1.2) blur(10px); */
+    filter: grayscale(10);
+}
+.img2{
+filter: contrast(1.5) saturate(0);
+}
+.img3{
+filter: drop-shadow(16px 16px 30px red) invert(1);
+}

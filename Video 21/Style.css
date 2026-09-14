@@ -1,0 +1,25 @@
+.main{
+    border: 2px solid rgb(77, 77, 77);
+    margin: auto;
+    width: 50vw;
+    box-sizing: border-box;
+    background-color: aqua;
+    height: 10vh;
+}
+.Container{
+    border: 2px solid rgb(77, 77, 77);
+    margin: 20px auto;
+    width: 50%;
+    box-sizing: border-box;
+    background-color: aqua;
+    min-height: 60vh;
+}
+.Container > p:not(:nth-child(1)){
+    border: 2px solid red;
+    width: 50%;
+}
+.Aryantech{
+    margin: 20px auto;
+    width: 50vw;
+    border: 2px solid;
+}
