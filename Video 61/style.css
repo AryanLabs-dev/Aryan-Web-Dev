@@ -1,0 +1,9 @@
+.box{
+    background-color: antiquewhite;
+    width: 80px;
+    height:  80px;
+    margin: 20px;
+    padding: 40px;
+    border: 2px solid black;
+}
+
