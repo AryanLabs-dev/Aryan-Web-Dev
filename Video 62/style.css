@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(130deg, #f4c191 0%, #173d1ab2 100%);
+    color: #f8fafc;
+    background-attachment: fixed;
+}
+
+.box {
+    width: 15%;
+    border-radius: 40px;
+    border: 1.7px solid rgb(254, 238, 238);
+    text-align: center;
+    padding: 40px 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80px;
+    margin: 20px;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+}
