@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Bubbling Concepts by AryanLabs</title>
+</head>
+<style>
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10%;
+        background-color: black;
+    }
+
+    .container:hover {
+        transform: scale(1.1);
+    }
+
+    .container:active {
+        transform: scale(1.03);
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40vh;
+        height: 40vh;
+        margin: 30px;
+        background-color: rgb(240, 126, 126);
+        color: white;
+        padding: 10px 25px 10px 25px;
+        border-radius: 10px;
+        transition: ease-in-out 0.4s all;
+        cursor: context-menu;
+    }
+
+    .childCont {
+        background-color: rgba(129, 255, 87, 0.762);
+        color: white;
+        box-shadow: -1.06268310546875px 4.062496185302734px 15px black;
+        height: 25vh;
+        display: flex;
+        padding: 20px;
+        border-radius: 10px;
+        align-items: center;
+        cursor: cell;
+    }
+
+    .Cont {
+        margin: 20px;
+        padding: 20px;
+        height: 15vh;
+        font-size: 25px;
+        font-family: monospace;
+        text-align: center;
+        border-radius: 10px;
+        background-color: rgba(220, 239, 172, 0.508);
+        color: black;
+        box-shadow: -1.06268310546875px 4.062496185302734px 15px black;
+        place-content: center;
+        cursor: pointer;
+    }
+
+    .Cont:hover {
+        box-shadow: -1.06268310546875px 4.062496185302734px 15px rgb(247, 230, 136);
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="childCont">
+            <div class="Cont">Hello Everyone!</div>
+        </div>
+    </div>
+    <script>
+        document.querySelector(".Cont")
+        document.querySelector(".container").addEventListener("dblclick", (e) => {
+            e.stopPropagation();
+            alert("Hey You're Clicked Me Double ‼️")
+        });
+        document.querySelector(".childCont").addEventListener("click", (e) => {
+            e.stopPropagation();
+            alert("Hey You're Clicked Me🚀")
+        });
+        document.querySelector(".Cont").addEventListener("click", (e) => {
+            e.stopPropagation();
+            alert("Hey You're Clicking... Me❓")
+        });
+        document.querySelector(".Cont").addEventListener("mouseleave", (e) => {
+            e.stopPropagation();
+            alert("Thank You ❤️")
+        })
+        setTimeout(() => {
+            document.querySelector(".Cont").style.color = "White"
+        }, 1000);
+        setInterval(() => {
+            const r = Math.floor(Math.random() * 256);
+            const g = Math.floor(Math.random() * 256);
+            const b = Math.floor(Math.random() * 256);
+            document.querySelector(".Cont").style.backgroundColor = `rgb(${r},${g},${b})`
+        }, 600);
+
+    </script>
+</body>
+
+</html>
